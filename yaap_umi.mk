@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2021 The yaapOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -8,13 +8,13 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common yaap stuff.
+$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 
 # Inherit from umi device
 $(call inherit-product, device/xiaomi/umi/device.mk)
 
-PRODUCT_NAME := lineage_umi
+PRODUCT_NAME := yaap_umi
 PRODUCT_DEVICE := umi
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
