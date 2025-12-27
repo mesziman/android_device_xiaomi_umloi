@@ -14,6 +14,8 @@ $(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 # Inherit from umi device
 $(call inherit-product, device/xiaomi/umi/device.mk)
 
+include device/xiaomi/camera/miuicamera.mk
+
 PRODUCT_NAME := yaap_umi
 PRODUCT_DEVICE := umi
 PRODUCT_MANUFACTURER := Xiaomi
